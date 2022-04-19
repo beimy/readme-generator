@@ -85,7 +85,7 @@ const promptUser = () => {
             }
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Choose to add a license',
             choices: ['MIT', 'GPLv2', 'Apache', 'Unlicense', 'None']
