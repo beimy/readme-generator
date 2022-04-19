@@ -83,6 +83,12 @@ const promptUser = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'Choose to add a license',
+            choices: ['MIT', 'GPLv2', 'Apache', 'Unlicense', 'None']
         }
         
     ])
@@ -94,7 +100,8 @@ const mockData = {
     install: 'This is how you install the site',
     usage: 'this is how you are allowed to use the site',
     contrib: 'this is hwo you can contribuite to the site',
-    testing: 'this is how you test the project'
+    testing: 'this is how you test the project',
+    license: 'MIT'
 }
 
 // TODO: Create a function to write README file
@@ -120,7 +127,7 @@ function init() {
 
     //build page with mock data
 
-    // writeToFile('README.md', mockData);
+    // writeToFile('YOUR README.md', mockData);
         
 }
 
