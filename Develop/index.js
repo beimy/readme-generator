@@ -89,6 +89,52 @@ const promptUser = () => {
             name: 'license',
             message: 'Choose to add a license',
             choices: ['MIT', 'GPLv2', 'Apache', 'Unlicense', 'None']
+        },
+        {
+            type: 'confirm',
+            name: 'confirmQuestion',
+            message: 'Would you like to include a Question section?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'gitHubUsername',
+            message: 'Please enter your Github username for people to contact you',
+            validate: gitHubUsernameInput => {
+                if(gitHubUsernameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter Github username for question section:')
+                    return false;
+                }
+            },
+            when: ({ confirmQuestion }) => {
+                if(confirmQuestion) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email for people to contact you',
+            validate: emailInput => {
+                if(emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter Github username for question section:')
+                    return false;
+                }
+            },
+            when: ({ confirmQuestion }) => {
+                if(confirmQuestion) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }
         
     ])

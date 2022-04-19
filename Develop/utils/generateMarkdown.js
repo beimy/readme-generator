@@ -141,11 +141,26 @@ function renderLicenseSection(license) {
   }
 }
 
+function renderQuestionSection(confirmQuestion, gitHubUsername, email) {
+  if(!confirmQuestion) {
+    return ``;
+  }
+
+  if(confirmQuestion) {
+    return `## Questions
+    If you have any questions about this project you can message me at these links:
+    https://github.com/${gitHubUsername}
+    My email address: ${email}
+    `
+  }
+
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
   // destructure data 
-  const { title, description, install, usage, contrib, testing, license} = data;
+  const { title, description, install, usage, contrib, testing, license, gitHubUsername, email, confirmQuestion} = data;
 
   return `# ${title}
   ${renderLicenseBadge(license)}
@@ -164,6 +179,8 @@ function generateMarkdown(data) {
 
   ## Testing Instructions
     ${testing}
+
+  ${renderQuestionSection(confirmQuestion, gitHubUsername, email)}
 
   ${renderLicenseSection(license)}
   ${renderLicenseLink(license)}
