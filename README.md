@@ -19,7 +19,8 @@
 
 
   ## Description
-    This program runs from the terminal. When ran it prompts the user with a series of questions about their project for which they want a README.md file generated. Once they answer all the prompts a readme file is generated in the programs files for them to take an use. 
+
+This program runs from the terminal. When ran it prompts the user with a series of questions about their project for which they want a README.md file generated. Once they answer all the prompts a readme file is generated in the programs files for them to take an use. 
 
   ## Installation Instructions
     I am not sure yet
