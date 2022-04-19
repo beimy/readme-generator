@@ -121,7 +121,7 @@ const promptUser = () => {
             name: 'email',
             message: 'Please enter your email for people to contact you',
             validate: emailInput => {
-                if(emailInput) {
+                if(GitHubUsernameInput) {
                     return true;
                 } else {
                     console.log('Please enter Github username for question section:')
