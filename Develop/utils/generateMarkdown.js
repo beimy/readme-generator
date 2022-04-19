@@ -156,14 +156,47 @@ function renderQuestionSection(confirmQuestion, gitHubUsername, email) {
 
 }
 
+function createTableofContents(data){
+
+  licenseContent = '';
+  if(data.license !== 'None'){
+    licenseContent = `[License Info](#License)`;
+  }
+
+  questionContent = '';
+  if(data.confirmQuestion) {
+    questionContent = `[Questions](#Questions)`;
+  }
+
+  return `## Table of Contents
+  [Description](#Description)
+
+  [Installation Instructions](#Installation-Instructions)
+
+  [Usage Rights](#Usage-Rights)
+
+  [Contribution Guidelines](#Contribution-Guidelines)
+
+  [Testing Instructions](#Testing-Instructions)
+
+  ${licenseContent}
+
+  ${questionContent}
+  `
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
   // destructure data 
   const { title, description, install, usage, contrib, testing, license, gitHubUsername, email, confirmQuestion} = data;
+  createTableofContents(data);
 
   return `# ${title}
   ${renderLicenseBadge(license)}
+
+  ${createTableofContents(data)}
+
 
   ## Description
     ${description}
