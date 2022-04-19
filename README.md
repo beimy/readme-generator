@@ -10,8 +10,6 @@
 
   [Contribution Guidelines](#Contribution-Guidelines)
 
-  [Testing Instructions](#Testing-Instructions)
-
   [License Info](#License)
 
   [Questions](#Questions)
@@ -22,16 +20,21 @@
   This program runs from the terminal. When ran it prompts the user with a series of questions about their project for which they want a README.md file generated. Once they answer all the prompts a readme file is generated in the programs files for them to take an use. 
 
   ## Installation Instructions
-  I am not sure yet
+  Follow the instructions below to build your own professional README.md!
+  
+  1. Before we do anything make sure that you have node.js installed otherwise this will not work. You can download it here: https://nodejs.org/en/ . 
+  2. Clone this repository onto your computer. 
+  3. Using the terminal, navigate to the folder you just created when cloning this repository, it should be titled 'readme-generator'.
+  4. At the root level of the readme-generator folder, run the command <npm init>. This will initialize this folder to work with npm.
+  5. Because this program uses the inquirer npm package to run, we need to install that. Do so by running the commmand <npm i inquirer>. For more info on inquirer look here https://www.npmjs.com/package/inquirer . 
+  6. Now we are ready to run the program. Using your terminal navigate into the Develop folder. Then run the command <node index.js>. If the terminal asks you for the name of your project then congratulations you can continue building your readme file. 
+  7. Once you've answered all the questions your new readme file will be created in the Develop folder under the name 'YOUR README.md'.
 
   ## Usage Rights
   You may freely use this program so long as you cite me.
 
   ## Contribution Guidelines
   Anyone my freely fork this repo to work on it.
-
-  ## Testing Instructions
-  I dont know
 
   ## Questions
   If you have any questions about this project you can message me at these links:<br>
