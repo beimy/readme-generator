@@ -25,7 +25,7 @@
   1. Before we do anything make sure that you have node.js installed otherwise this will not work. You can download it here: https://nodejs.org/en/ . 
   2. Clone this repository onto your computer. 
   3. Using the terminal, navigate to the folder you just created when cloning this repository, it should be titled 'readme-generator'.
-  4. At the root level of the readme-generator folder, run the command <npm init>. This will initialize this folder to work with npm.
+  4. At the root level of the readme-generator folder, run the command 'npm init'. This will initialize this folder to work with npm.
   5. Because this program uses the inquirer npm package to run, we need to install that. Do so by running the commmand 'npm i inquirer'. For more info on inquirer look here https://www.npmjs.com/package/inquirer . 
   6. Now we are ready to run the program. Using your terminal navigate into the Develop folder. Then run the command 'node index.js'. If the terminal asks you for the name of your project then congratulations you can continue building your readme file. 
   7. Once you've answered all the questions your new readme file will be created in the Develop folder under the name 'YOUR README.md'.
