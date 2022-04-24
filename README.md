@@ -30,6 +30,8 @@
   6. Now we are ready to run the program. Using your terminal navigate into the Develop folder. Then run the command 'node index.js'. If the terminal asks you for the name of your project then congratulations you can continue building your readme file. 
   7. Once you've answered all the questions your new readme file will be created in the Develop folder under the name 'YOUR README.md'.
 
+  For a tutorial on installing and using this program click [Here}(https://watch.screencastify.com/v/44K465uUQrcmJB4m7Qu6).  
+
   ## Usage Rights
   You may freely use this program so long as you cite me.
 
